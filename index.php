@@ -1,64 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Piggy Wings</title>  
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="./public/images/logo/piggy.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./public/images/apple-touch-icon.png">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="./public/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/css/style.css">    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="public/css/custom.css">
-	<link rel="stylesheet" href="public/css/footer.css">
-
-</head>
+ <!-- header -->
+ <?php include './includes/header.php';?>
 
 <body>
-	<!-- Start header -->
-	<header class="top-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="./public/images/logo/piggy.png" class="ml-5" style="width: 80px;" alt="" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbars-rs-food">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="reservation.html">Reservation</a>
-								<a class="dropdown-item" href="stuff.html">Stuff</a>
-								<a class="dropdown-item" href="gallery.html">Gallery</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
-							</div>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- End header -->
-	
+ <!-- navbar -->
+ <?php include './includes/navbar.php';?>
+
 	<!-- Start slides -->
 	<div id="slides" class="cover-slides">
 		<ul class="slides-container">
@@ -126,8 +73,6 @@
 		</div>
 	</div>
 	<!-- End About -->
-	
-
 	
 	<!-- Start Menu -->
 	<div class="menu-box">
@@ -368,7 +313,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<!-- End Menu -->
@@ -477,105 +421,8 @@
 	</div>
 	<!-- End Customer Reviews -->
 	
+<!-- footer design -->
+<?php include './includes/footerdesign.php';?>
 
-	
-	<!-- Start Footer -->
-    
-    <footer class="footer-32892 pb-0">
-		<div class="site-section">
-		  <div class="container">
-  
-			
-			<div class="row">
-  
-			  <div class="col-md pr-md-5 mb-4 mb-md-0">
-				<h3>About Us</h3>
-				<p class="mb-4">Unlimited Korean Samgyeop-sal and Unlimited Chicken Wings!
-					At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef,</p>
-				<ul class="list-unstyled quick-info mb-4">
-				  <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-phone"></span> 0945 072 9177</a></li>
-				  <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-envelope"></span> piggywings.ph@gmail.com</a></li>
-				</ul>
-  
-				<form action="#" class="subscribe">
-				  <input type="text" class="form-control" placeholder="Enter your e-mail">
-				  <input type="submit" class="btn btn-submit" value="Send">
-				</form>
-			  </div>
-			  <div class="col-md mb-4 mb-md-0">
-				<h3>Latest Tweet</h3>
-				<ul class="list-unstyled tweets">
-				  <li class="d-flex">
-					<div class="mr-4"><span class="icon icon-twitter"></span></div>
-					<div>We believe that every member of the family deserves crispy, tender, and flavorful chicken wing and juicy Samgyusal.</div>
-				  </li>
-				  <li class="d-flex">
-					<div class="mr-4"><span class="icon icon-twitter"></span></div>
-					<div>We are very thrilled to hear from you, it is important for us to maintain a wholesome and relevant content and environment. This means that all posts and comments on this page will be monitored, reviewed, and filtered in line with Piggy Wings values and philosophies..</div>
-				  </li>
-				  <li class="d-flex">
-					<div class="mr-4"><span class="icon icon-twitter"></span></div>
-					<div>Piggy Wings reserves the right to remove any posts that do not adhere to our guidelines as listed above. We also reserve the right to block anyone who violates these guidelines from posting on our page..</div>
-				  </li>
-				</ul>
-			  </div>
-  
-  
-			  <div class="col-md-3 mb-4 mb-md-0">
-				<h3>Instagram</h3>
-				<div class="row gallery">
-				  <div class="col-6">
-					<a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-					<a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-				  </div>
-				  <div class="col-6">
-					<a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-					<a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-				  </div>
-				</div>
-			  </div>
-			  
-			  <div class="col-12">
-				<div class="py-5 footer-menu-wrap d-md-flex align-items-center">
-				  <ul class="list-unstyled footer-menu mr-auto">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Our works</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contacts</a></li>
-				  </ul>
-				  <div class="site-logo-wrap ml-auto">
-					<a href="#" class="site-logo">
-					  Colorlib
-					</a>
-				  </div>
-				</div>
-			  </div>
-			  
-			</div>
-		  </div>
-		</div>
-	  </footer>
-	<!-- End Footer -->
-	
-	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-
-
-</body>
-	<!-- ALL JS FILES -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="public/js/jquery-3.2.1.min.js"></script>
-	
-
-    <!-- ALL PLUGINS -->
-	<script src="public/js/jquery.superslides.min.js"></script>
-	<script src="public/js/./public/images-loded.min.js"></script>
-	<script src="public/js/isotope.min.js"></script>
-	<script src="public/js/baguetteBox.min.js"></script>
-	<script src="public/js/form-validator.min.js"></script>
-    <script src="public/js/contact-form-script.js"></script>
-    <script src="public/js/custom.js"></script>
-</html>
+<!-- footer -->
+<?php include './includes/footer.php';?>
