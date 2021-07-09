@@ -55,7 +55,7 @@
 			  <div class="col-12">
 				<div class="py-5 footer-menu-wrap d-md-flex align-items-center">
 				  <ul class="list-unstyled footer-menu mr-auto">
-					<li><a href="#">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Our works</a></li>
 					<li><a href="#">Services</a></li>
