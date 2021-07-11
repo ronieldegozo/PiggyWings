@@ -1,5 +1,9 @@
-	<!-- Start header -->
-	<header class="top-navbar">
+<?php
+    require_once './controller/userauthcontroller.php';
+?>
+
+<!-- Start header -->  
+  <header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="index.php">
@@ -21,7 +25,7 @@
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-						<li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#register">Register</a></li>
+						<li class="nav-item"><a class="nav-link" href="register.php" >Register</a></li>
 						<li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login">Login</a></li>
 					</ul>
 				</div>
@@ -42,78 +46,36 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="" method="post">
-			<label for="Username">Username</label>
-			<div class="form-wrapper">
-                <input  type="text"
-                id="username"
-                name="username"
-                class="form-control"
-                placeholder="Enter Username"/>
-            </div>
 
-			<label for="password">Password</label>
-			<div class="form-wrapper">
-                <input  type="password"
-                id="password"
-                name="password"
-                class="form-control"
-                placeholder="Enter Password"/>
+      <form action="index.php" method="POST">
+  
+  <!-- //validation error -->
+    <!-- register validation error -->
+            <?php if(count($errors) > 0): ?>
+                <?php foreach($errors as $error): ?>
+            <div class="alert alert-danger alert-dismissible fade show" type="button" class="close" data-dismiss="alert" aria-label="Close" style="    font-size: 12px;">
+                    <strong><?php echo $error?></strong>
             </div>
-			<div class="modal-footer">
-        <button type="submit" class="btn btn-success">Login</button>
-      	</div>
-		</form>
+            <?php endforeach; ?>
+            <?php endif ?>
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1"><strong>Email address</strong></label>
+              <input type="text" name="username" value="<?php echo $username ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><strong>Password</strong></label>
+              <input type="password" name="password"  class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" name="login-btn" class="btn btn-success float-right">Sign in</button>
+          </form>
+          
       </div>
-
     </div>
   </div>
 </div>
 	
-
-
-
-
-
-
-<!-- Modal for Register -->
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel"><strong>Register User</strong></h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post">
-			<label for="Username">Username</label>
-			<div class="form-wrapper">
-                <input  type="text"
-                id="username"
-                name="username"
-                class="form-control"
-                placeholder="Enter Username"/>
-            </div>
-
-			<label for="password">Password</label>
-			<div class="form-wrapper">
-                <input  type="password"
-                id="password"
-                name="password"
-                class="form-control"
-                placeholder="Enter Password"/>
-            </div>
-			<div class="modal-footer">
-        <button type="submit" class="btn btn-success">Register</button>
-      	</div>
-		</form>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <!-- End header -->
 
