@@ -17,13 +17,6 @@
 						<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="menu.php">Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="#">Reservation</a>
-								<a class="dropdown-item" href="#">Gallery</a>
-							</div>
-						</li>
 						<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 						<li class="nav-item"><a class="nav-link" href="register.php" >Register</a></li>
 						<li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login">Login</a></li>
