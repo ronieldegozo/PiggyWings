@@ -16,11 +16,15 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong >Welcome To <br> Piggy Wings</strong></h1>
 							<p class="m-b-40">Unlimited Korean Samgyeop-sal and Unlimited Chicken Wings! <br> At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef,</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+
+							<div class="col-lg-4 d-flex align-items-center " data-aos="zoom-in" data-aos-delay="200">
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white venobox"   data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6tP9dn3lOX0&t=1s">Watch</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</li>
+
 			<li class="text-left">
 				<img src="./public/images/main/piggy-main.jpg" alt="">
 				<div class="container">
@@ -28,7 +32,7 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Welcome To <br> Live Dinner Restaurant</strong></h1>
 							<p class="m-b-40">Unlimited Korean Samgyeop-sal and Unlimited Chicken Wings! <br> At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef,</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white venobox"   data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6tP9dn3lOX0&t=1s">Watch</a></p>
 						</div>
 					</div>
 				</div>
@@ -40,7 +44,7 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
 							<p class="m-b-40">Unlimited Korean Samgyeop-sal and Unlimited Chicken Wings! <br> At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef,</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white venobox"   data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=6tP9dn3lOX0&t=1s">Watch</a></p>
 						</div>
 					</div>
 				</div>
