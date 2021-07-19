@@ -55,11 +55,11 @@
 
             <div class="form-group">
               <label for="exampleInputEmail1"><strong>Email address</strong></label>
-              <input type="text" name="username" value="<?php echo $username ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="text" name="username" required value="<?php echo $username ?>"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1"><strong>Password</strong></label>
-              <input type="password" name="password"  class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" name="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" name="login-btn" class="btn btn-success float-right">Sign in</button>
           </form>
