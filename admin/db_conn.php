@@ -8,7 +8,7 @@ $sname= "localhost";
 $unmae= "root";
 $password = "";
 
-$db_name = "reservation";
+$db_name = "piggyrestaurant";
 
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
 
