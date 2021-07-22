@@ -19,7 +19,7 @@ if(!isset($_SESSION['id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Reserve Table</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -39,11 +39,11 @@ if(!isset($_SESSION['id'])) {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="homepage.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="reserve.php">Reserve A Table </a>
+        <a class="nav-link active"  href="reserve.php">Reserve A Table </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
@@ -90,7 +90,54 @@ if(!isset($_SESSION['id'])) {
                 </nav>
 
             <div class="container-fluid">
-                                                    <!-- display message -->
+                    
+            
+            <!-- Reserve new Customer  -->
+                
+            <?php if($_SESSION['verified']): ?>
+                <h1 class="text-center"><strong>Reserve a Table</strong></h1>
+                
+                <form action="reserve_save.php" method="post">
+                    <div class="form-group">
+                        <label for="Name">Full Name</label>
+                        <input type="text" class="form-control" required name="fname" placeholder="Full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" required class="form-control" placeholder="Complete Address" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnumber">Contact Number</label>
+                        <input type="number" class="form-control" required name="cnumber" placeholder="Contact Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Customer">Number of Customer</label>
+                        <input type="number" class="form-control" required name="customer"  required placeholder="Number of Customer" min="2" max="20">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Date">Date</label>
+                        <input type="date" class="form-control" required name="date"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Date">Date</label>
+                        <input type="time" class="form-control" required name="time"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" name="reserve"  class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+
+            <?php endif; ?>
+
+            
+
+
                 <?php if(isset($_SESSION['message'])): ?>
                                     <div class="alert alert-success alert-dismissible fade show" type="button" class="close" data-dismiss="alert" aria-label="Close" style="    font-size: 12px;">
                                         <?php 
