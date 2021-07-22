@@ -69,7 +69,7 @@
 						<h4>Little Story</h4>
 						<p>Description here</p>
 						<p>Description here</p>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="./reserve/reservation.php">Reservation</a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12"  >
