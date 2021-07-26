@@ -21,11 +21,11 @@ endif;
 </head>
 
 <body>
-<h3 style="text-align:center">Chimney's Catering Services</h3>
-<h4 style="text-align:center">Mabini Street, Fisheries Avenue, Talisay City</h4>
-<h4 style="text-align:center">Tel. No. : 435-1114</h4>
-<h4 style="text-align:center">Email : chimneycatering@yahoo.com</h4>
-<h4 style="text-align:center">Facebook : facebook.com/chimneycatering</h4>
+<h3 style="text-align:center">Piggy Wings Korean Restaurant</h3>
+<h4 style="text-align:center">1977 Commonwealth Avenue Brgy Holy Spirit 1127 Quezon City, Philippines</h4>
+<h4 style="text-align:center">Cell. Number. : 0945 072 9177</h4>
+<h4 style="text-align:center">Email : piggywings.ph@gmail.com</h4>
+<h4 style="text-align:center">Facebook : facebook.com/PiggyWings.ph</h4>
 <hr>
 
 <table style="width:100%">
@@ -39,6 +39,7 @@ include('../includes/dbcon.php');
         $first=$row['r_first'];
         $last=$row['r_last'];
         $contact=$row['r_contact'];
+        $time=$row['r_time'];
         $address=$row['r_address'];
         $date=$row['r_date'];
         $venue=$row['r_venue'];
@@ -62,12 +63,6 @@ include('../includes/dbcon.php');
                         <td><?php echo $type;?></td>
                       </tr>
                       <tr>
-                        <td class="label">Contact #: </td>
-                        <td><?php echo $contact;?></td>
-                        <td class="label">Venue for the Event: </td>
-                        <td><?php echo $venue;?></td>
-                      </tr> 
-                      <tr>
                         <td class="label">Address: </td>
                         <td><?php echo $address;?></td>
                         <td class="label">Total Payable: </td>
@@ -79,12 +74,13 @@ include('../includes/dbcon.php');
                         <td class="label">Balance: </td>
                         <td><?php echo $balance;?></td>
                       </tr>  
-                      <tr>  
-                        <td class="label">Team Assigned: </td>
-                        <td><?php echo $team;?></td>
-                        <td class="label">Motif: </td>
-                        <td><?php echo $motif;?></td>
-                      </tr>  
+                      <tr>
+                        <td class="label">Contact #: </td>
+                        <td><?php echo $contact;?></td>
+                        <td class="label">Reservation Time</td>
+                        <td><?php echo date("h:i a",strtotime($time));?></td>
+                      </tr> 
+
 </table>
 <br>
 <?php

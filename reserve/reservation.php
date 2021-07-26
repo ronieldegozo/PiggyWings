@@ -1,69 +1,107 @@
+<?php include 'header.php';?>
 
-
-<?php include '../includes/header.php';?>
 <body>
+	<?php include 'navbar.php';?>
+	<?php include 'menu-tab.php';?>
+	
+		<div class = "content">
+			<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class = "col-md-9 col-lg-9">
+					<div class="widget wgreen">
+                
+                <div class="widget-head">
+                  <div class="pull-left">Create Reservation</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="widget-content">
+                  <div class="padd">
+
+                    <br>
+                    <!-- Form starts.  -->
+                     <form class="form-horizontal" role="form" action="reservation_save.php" method="post">
+                              
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">First Name</label>
+                                  <div class="col-lg-5">
+                                    <input type="text" class="form-control" placeholder="First Name" name="first" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Last Name</label>
+                                  <div class="col-lg-5">
+                                    <input type="text" class="form-control" placeholder="Last Name" name="last" required>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Address</label>
+                                  <div class="col-lg-5">
+                                    <textarea class="form-control" rows="5" placeholder="Complete Address" name="address" required></textarea>
+                                  </div>
+                                </div>    
+
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Contact #</label>
+                                  <div class="col-lg-5">
+                                    <input type="text" class="form-control" placeholder="Contact #" name="contact" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Email Address</label>
+                                  <div class="col-lg-5">
+                                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                                  </div>
+                                </div>
+								 <div class="form-group">
+                                  <label class="col-lg-2 control-label"></label>
+                                  <div class="col-lg-5">
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" id="inlineCheckbox1" value="option1" required> I agree to the <a href="#facilities" data-toggle="modal">terms and condtion</a> of the Chimney's Catering
+                                    </label>
+									</div>
+									</div>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="../index.php">Piggy Wings</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+                                <div class="form-group">
+                                  <div class="col-lg-offset-2 col-lg-6">
+                                    <button type="reset" class="btn btn-sm btn-default">Clear</button>
+                                    <button type="submit" class="btn btn-sm btn-primary">Next</button>
+                                    
+                                  </div>
+                                </div>
+                              </form>
+                  </div>
+                </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+              </div>		
+				</div>
+				<?php include('right-sidebar.php');?>
+			
+             
+    
+    
+			
+			</div>	
+		</div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
-      <input class="form-control mr-sm-2" type ="text" required name="rcode" class="form-control" placeholder="Reservation Code">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+<?php include 'script.php';?>
+<script>
+         $(function () {
+         //Initialize Select2 Elements
+         $(".select2").select2();
+         
 
-
-
-<div class="container">
-  <h2 class="text-center">Reserve</h2>
-  <form class="form-horizontal" role="form" action="reservation_save.php" method="post">
-              
-              <div class="form-group">
-                    <label class="control-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="First Name" name="first" required>
-              </div>
-
-              <div class="form-group">
-                    <label class="control-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last Name" name="last" required>
-              </div>
-
-              <div class="form-group">
-                    <label class="control-label">Address</label>
-                    <textarea class="form-control" rows="5" placeholder="Complete Address" name="address" required></textarea>
-              </div>
-
-              <div class="form-group">
-                    <label class="control-label">Contact #</label>
-                    <input type="text" class="form-control" placeholder="Contact #" name="contact" required>
-              </div>
-
-              <div class="form-group">
-                    <label class="control-label">Email Address</label>
-                    <input type="email" class="form-control" placeholder="Email Address" name="email">
-              </div>
-
-              <button type="reset" class="btn btn-default">Clear</button>
-
-              <button type="submit" class="btn  btn-primary">Next</button>
-          </form>
-  </div>
-
-    <?php include '../includes/footer.php';?>
+     })
+    </script>
 </body>
 </html>
 

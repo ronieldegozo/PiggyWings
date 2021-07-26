@@ -6,10 +6,10 @@
 <div class="lockscreen-wrapper">
   <div class="lockscreen-logo">
     
-    <a style = "color:white;" href="../index.php">Catering</a>
+    <a style = "color:white;" href="../index.php">Piggy Wings</a>
   </div>
   <!-- User name -->
-  <div class="lockscreen-name">Administrator</div>
+  <div class="lockscreen-name">Admin</div>
 
   <!-- START LOCK SCREEN ITEM -->
   <div class="lockscreen-item">

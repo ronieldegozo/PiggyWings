@@ -30,10 +30,10 @@ endif;
                     </div>
 
                     <h3 style="text-align:center">Piggy Wings Korean Restaurant</h3>
-<h4 style="text-align:center">Quezon City</h4>
-<h4 style="text-align:center">Cellphone Number. : 63 917 631 7810</h4>
-<h4 style="text-align:center">Email : piggwings@gmail.com</h4>
-<h4 style="text-align:center">Facebook : facebook.com/PiggyWings.ph </h4>
+<h4 style="text-align:center">1977 Commonwealth Avenue Brgy Holy Spirit 1127 Quezon City, Philippines</h4>
+<h4 style="text-align:center">Cell. Number. : 0945 072 9177</h4>
+<h4 style="text-align:center">Email : piggywings.ph@gmail.com</h4>
+<h4 style="text-align:center">Facebook : facebook.com/PiggyWings.ph</h4>
 <hr>
 
 <table style="width:100%">
@@ -76,48 +76,25 @@ include('includes/dbcon.php');
                       <tr>
                         <td>Contact #: </td>
                         <td><?php echo $contact;?></td>
-                        <td>Venue: </td>
-                        <td><?php echo $venue;?></td>
-                      </tr> 
-                      <tr>
                         <td>Address: </td>
                         <td><?php echo $address;?></td>
-                        <td>Motif: </td>
-                        <td><?php echo $motif;?></td>
+                      </tr> 
 
-                      </tr>   
-                      <tr>  
+                      <tr>
                         <td>Status:</td>
                         <th><?php echo $row['r_status'];?></th>
-                        <td>Occasion: </td>
-                        <td><?php echo $ocassion;?></td>
-                        
-                      </tr>  
-                      <tr>  
-                        <td></td>
-                        <td></td>
-                        <td>Type: </td>
+                        <td>Order: </td>
                         <td><?php echo $type;?></td>
-                        
-                      </tr>  
+                      </tr>   
                       <tr>  
-                        <td></td>
-                        <td></td>
                         <td>No. of Pax: </td>
                         <td><?php echo $row['pax'];?></td>
-                        
+                        <td>Payable: </td>
+                        <td>P <?php echo number_format($payable,2);?></td>
                       </tr>  
 
                       <tr>  
-                        <td></td>
-                        <td></td>
-                        <td>Payable: </td>
-                        <td>P <?php echo number_format($payable,2);?></td>
-                      </tr> 
-                      <tr>  
-                        <td></td>
-                        <td></td>
-                        <td>Mode of Payment: </td>
+                      <td>Mode of Payment: </td>
                         <td><?php echo $row['modeofpayment'];?></td>
                       </tr> 
                       

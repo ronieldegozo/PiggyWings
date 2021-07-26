@@ -102,7 +102,7 @@ endif;
                         <th>Contact</th>
                         <th>Event</th>
                         <th>Date</th>
-                        <th>Venue</th>
+
                         <th>Balance</th>
                         <th>Action</th>
                       </tr>
@@ -131,7 +131,7 @@ include('../includes/dbcon.php');
                         <td><?php echo $contact;?></td>
                         <td><?php echo $type;?></td>
                         <td><?php echo $date;?></td>
-                        <td><?php echo $venue;?></td>
+              
                         <td><?php echo $balance;?></td>
                         <td>
                               <a href="#update" class="btn btn-default" data-target="#update<?php echo $id;?>" data-toggle="modal">
@@ -206,7 +206,7 @@ include('../includes/dbcon.php');
                         <th>Contact</th>
                         <th>Event</th>
                         <th>Date</th>
-                        <th>Venue</th>
+                  
                         <th>Balance</th>
                         <th>Action</th>
                       </tr>

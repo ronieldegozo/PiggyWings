@@ -3,9 +3,6 @@
 session_start();
 include('./admin/db_conn.php');
 
-
-
-
 if (isset($_POST['reserve'])) {
     $fname = $_POST['fname'];
     $address = $_POST['address'];

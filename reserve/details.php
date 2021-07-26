@@ -3,36 +3,15 @@ if(empty($_SESSION['id'])):
 header('Location:index.php');
 endif;
 ?>
-<?php include '../includes/header.php';?>
-
+<?php include 'header.php';?>
+    <script language="JavaScript"><!--
+javascript:window.history.forward(1);
+//--></script>
 
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="../index.php">Piggy Wings</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" disabled >Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Details</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
-      <input class="form-control mr-sm-2" type ="text" required name="rcode" class="form-control" placeholder="Reservation Code">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-
-
+	<?php include 'navbar.php';?>
+	<?php include 'menu-tab.php';?>
+	
 		<div class = "content">
 			<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
         
@@ -54,12 +33,7 @@ endif;
                     <br>
                     <!-- Form starts.  -->
                      <form class="form-horizontal" role="form" action="details_save.php" method="post">
-                                <div class="form-group">
-                                  <label class="col-lg-2 control-label">Venue</label>
-                                  <div class="col-lg-5">
-                                    <textarea class="form-control" name="venue" rows="5" placeholder="Complete Address of venue" required></textarea>
-                                  </div>
-                                </div>    
+
 
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label">Date of Event</label>
@@ -83,26 +57,8 @@ endif;
                                   </div>
                                 </div>
 
-                                <div class="form-group">
-                                  <label class="col-lg-2 control-label">Motif</label>
-                                  <div class="col-lg-5">
-                                    <input type="text" class="form-control" placeholder="Write theme/motif" name="motif">
-                                  </div>
-                                </div>
 
-                                <div class="form-group">
-                                  <label class="col-lg-2 control-label">Occasion</label>
-                                  <div class="col-lg-5">
-                                    <select class="form-control select2 " id="exampleSelect1" name="ocassion" placeholder="Select occasion" required>
-                                      <option>Baptism</option>
-                                      <option>Birthday</option>
-                                      <option>Christmas Party</option>
-                                      <option>Funeral</option>
-                                      <option>Wedding</option>
-                                      <option>Others</option>
-                                    </select>
-                                  </div>
-                                </div>  
+
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label">No. of Pax</label>
                                   <div class="col-lg-5">
@@ -189,14 +145,16 @@ include('includes/dbcon.php');
                               </form>
                   </div>
                 </div>
-
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
               </div>		
 				</div>
-
+				<?php include('right-sidebar.php');?>
 				
 			</div>	
 		</div>
-
+<?php include 'footer.php';?> 	
 <?php include 'script.php';?>
 <script>
   $(function () {

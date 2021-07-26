@@ -100,10 +100,7 @@ endif;
                         <th>Last Name</th>
                         <th>First Name</th>
                         <th>Contact</th>
-                        <th>Event</th>
                         <th>Date</th>
-                        <th>Venue</th>
-                        <th>Team</th>
                         <th>Balance</th>
                         <th>Mode of Payment</th>
                         <th>Action</th>
@@ -123,20 +120,16 @@ include('../includes/dbcon.php');
         $address=$row['r_address'];
         $email=$row['r_email'];
         $date=$row['r_date'];
-        $venue=$row['r_venue'];
         $balance=$row['balance'];
         $type=$row['r_ocassion'];
-        $team=$row['team_name'];
+
 ?>                      
                       <tr>
                         <td><?php echo $rcode;?></td>
                         <td><?php echo $last;?></td>
                         <td><?php echo $first;?></td>
                         <td><?php echo $contact;?></td>
-                        <td><?php echo $type;?></td>
                         <td><?php echo $date;?></td>
-                        <td><?php echo $venue;?></td>
-                        <td><?php echo $team;?></td>
                         <td><?php echo $balance;?></td>
                         <td><?php echo $row['modeofpayment'];?></td>
                         <td>
@@ -320,10 +313,7 @@ include('../includes/dbcon.php');
                         <th>Last Name</th>
                         <th>First Name</th>
                         <th>Contact</th>
-                        <th>Event</th>
                         <th>Date</th>
-                        <th>Venue</th>
-                        <th>Team</th>
                         <th>Balance</th>
                         <th>Mode of Payment</th>
                         <th>Action</th>

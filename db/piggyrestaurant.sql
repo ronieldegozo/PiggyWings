@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2021 at 07:05 AM
+-- Generation Time: Jul 26, 2021 at 08:35 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -44,7 +44,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `address`, `username`, `email`, `verified`, `token`, `password`) VALUES
-(5, 'Mc Roniel ', 'De Gozo', 'San Mateo Rizal', 'Roniel', 'ronieldegozo@gmail.com', 1, '1783ae560e8f54541249745c309390481f4d5f1daa455ab8399024f82b850c47f2adef6c558cef20f081e7b38bcdcd92c4d9', '$2y$10$eSDZeJZbUN9iVjhcFUCBc.XbMi.lDdezAfNQS3EAROSwk84ZX8XCu');
+(5, 'Mc Roniel ', 'De Gozo', 'San Mateo Rizal', 'Roniel', 'ronieldegozo@gmail.com', 1, '1783ae560e8f54541249745c309390481f4d5f1daa455ab8399024f82b850c47f2adef6c558cef20f081e7b38bcdcd92c4d9', '$2y$10$eSDZeJZbUN9iVjhcFUCBc.XbMi.lDdezAfNQS3EAROSwk84ZX8XCu'),
+(6, 'Smaber', 'Laurito', 'Marikina', 'Samber', 'lauritosamber@gmail.com', 0, 'c9324aca8a7a6e4719020376b8914e6028674de2fa739ed2481bc2bcc1795a16c67d9a46c039ffe11c0b653945f0f3bb93be', '$2y$10$MsnCh5RGwSsv0MynauGyB.nEqr/kLIjzT1j7cnKviymv5wtNy/Ute');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +65,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
